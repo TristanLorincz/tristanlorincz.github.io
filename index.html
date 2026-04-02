@@ -212,19 +212,19 @@ https://www.tooplate.com/view/2117-infinite-loop
             <div class="col-12">
                 <div class="mx-auto tm-gallery-container">
                     <div class="grid tm-gallery">
-                      <a href="img/gallery-img-01.jpg">
+                      <a href="pdfs/Short policy paper copy.pdf" class="tm-pdf-link" target="_blank" rel="noopener">
                         <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-01.jpg" alt="Image 1" class="img-fluid">
+                          <img src="img/paper-ai-copyright-tn.svg" alt="AI Copyright Policy Paper" class="img-fluid">
                           <figcaption>
-                            <h2><i>Physical Health <span>Exercise!</span></i></h2>
+                            <h2><i>AI &amp; Copyright <span>Policy Paper</span></i></h2>
                           </figcaption>
                         </figure>
                       </a>
-                      <a href="img/gallery-img-02.jpg">
+                      <a href="pdfs/MI Research Paper - Data Brokers copy.pdf" class="tm-pdf-link" target="_blank" rel="noopener">
                         <figure class="effect-honey tm-gallery-item">
-                          <img src="img/gallery-tn-02.jpg" alt="Image 2" class="img-fluid">
+                          <img src="img/paper-data-brokers-tn.svg" alt="Data Brokers Research Paper" class="img-fluid">
                           <figcaption>
-                            <h2><i>Rain on Glass <span>Second Image</span></i></h2>
+                            <h2><i>Data Brokers <span>Research Paper</span></i></h2>
                           </figcaption>
                         </figure>
                       </a>
@@ -456,7 +456,7 @@ https://www.tooplate.com/view/2117-infinite-loop
         
         // Add smooth scrolling to all links
         // https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
-        $("a").on('click', function(event) {
+        $("a:not(.tm-pdf-link)").on('click', function(event) {
           if (this.hash !== "") {
             event.preventDefault();
             var hash = this.hash;
@@ -471,7 +471,7 @@ https://www.tooplate.com/view/2117-infinite-loop
 
         // Pop up
         $('.tm-gallery').magnificPopup({
-          delegate: 'a',
+          delegate: 'a:not(.tm-pdf-link)',
           type: 'image',
           gallery: { enabled: true }
         });
