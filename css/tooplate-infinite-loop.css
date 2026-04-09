@@ -697,3 +697,41 @@ p {
     margin: 0;
   }
 }
+
+/* Mobile optimizations */
+@media (max-width: 575px) {
+  .tm-hero-title {
+    font-size: 2.2rem;
+  }
+
+  .tm-section-title {
+    font-size: 1.8rem;
+  }
+
+  .tm-section-pad-top {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+
+  .tm-btn-submit {
+    width: 100%;
+  }
+
+  .tm-testimonial-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+  }
+
+  .tm-icon {
+    font-size: 1.5rem !important;
+  }
+
+  .tm-input {
+    width: 100%;
+  }
+
+  #contact {
+    padding-top: 60px;
+  }
+}
